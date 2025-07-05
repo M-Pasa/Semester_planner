@@ -30,6 +30,6 @@ public class Course {
     public List<String> getPrerequisites() { return prerequisites; }
     @Override
     public String toString() {
-        return courseCode + ": " + courseName + " (" + (IsCompulsory ? "Z" : "S") + kredi + " kredi," + AKTS + " AKTS, Offered in " + offeredSemester + ")\n";
+        return courseCode + ": " + courseName + " (" + (IsCompulsory ? "Z, " : "S, ") + kredi + " kredi, " + AKTS + " AKTS, Offered in " + offeredSemester + ", prerequests: "+ getPrerequisites().toString() +  ")";
     }
 }

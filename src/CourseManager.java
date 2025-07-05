@@ -21,63 +21,63 @@ public class CourseManager {
     private final Map<String, Course> courseMap = new HashMap<>();
 
     //Semester one courses
-    private final Course CSE101 = new Course("CSE101", "Introduction to Computer Engineering and Career Planning", 3.5F, 8, Course.Semester.FALL, true, null);
-    private final Course CSE107 = new Course("CSE107", "Introduction to Computer Science Laboratory", 1.0F, 2, Course.Semester.FALL, true, null);
-    private final Course ENG151 = new Course("ENG151", "Science and Technology", 2.0F, 2, Course.Semester.FALL, true, null);
-    private final Course MATH101 = new Course("MATH101", "Calculus I", 5.0F, 7, Course.Semester.FALL, true, null);
-    private final Course PHYS121 = new Course("PHYS121", "Physics I", 4.0F, 6, Course.Semester.FALL, true, null);
-    private final Course PHYS151 = new Course("PHYS151", "Physics Laboratory I", 1.0F, 1, Course.Semester.FALL, true, null);
-    private final Course HIS101 = new Course("HIS101", "Principles of Atatürk and the History of Turkish Revolution I", 2.0F, 2, Course.Semester.FALL, true, null);
-    private final Course TUR101 = new Course("TUR101", "Turkish I", 2.0F, 2, Course.Semester.FALL, true, null);
+    private final Course CSE101 = new Course("CSE101", "Introduction to Computer Engineering and Career Planning", 3.5F, 8, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course CSE107 = new Course("CSE107", "Introduction to Computer Science Laboratory", 1.0F, 2, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course ENG151 = new Course("ENG151", "Science and Technology", 2.0F, 2, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course MATH101 = new Course("MATH101", "Calculus I", 5.0F, 7, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course PHYS121 = new Course("PHYS121", "Physics I", 4.0F, 6, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course PHYS151 = new Course("PHYS151", "Physics Laboratory I", 1.0F, 1, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course HIS101 = new Course("HIS101", "Principles of Atatürk and the History of Turkish Revolution I", 2.0F, 2, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course TUR101 = new Course("TUR101", "Turkish I", 2.0F, 2, Course.Semester.FALL, true, new ArrayList<>());
     //Semester two courses
-    private final Course CSE102 = new Course("CSE102", "Computer Programming", 4.5F, 8, Course.Semester.BOTH, true, null);
-    private final Course CSE108 = new Course("CSE108", "Computer Programming Laboratory", 1.0F, 2, Course.Semester.SPRING, true, null);
-    private final Course ENG152 = new Course("ENG152", "Culture of Science and Computation", 2.0F, 2, Course.Semester.SPRING, true, null);
+    private final Course CSE102 = new Course("CSE102", "Computer Programming", 4.5F, 8, Course.Semester.BOTH, true, new ArrayList<>());
+    private final Course CSE108 = new Course("CSE108", "Computer Programming Laboratory", 1.0F, 2, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course ENG152 = new Course("ENG152", "Culture of Science and Computation", 2.0F, 2, Course.Semester.SPRING, true, new ArrayList<>());
     private final Course MATH102 = new Course("MATH102", "Calculus II", 5.0F, 7, Course.Semester.SPRING, true, List.of("MATH101"));
-    private final Course PHYS122 = new Course("PHYS122", "Physics II", 4.0F, 6, Course.Semester.SPRING, true, null);
-    private final Course PHYS152 = new Course("PHYS152", "Physics Laboratory II", 1.0F, 1, Course.Semester.SPRING, true, null);
-    private final Course HIS102 = new Course("HIS102", "Principles Of Atatürk And The History Of Turkish Revolution II", 2.0F, 2, Course.Semester.SPRING, true, null);
-    private final Course TUR102 = new Course("TUR102", "Turkish II", 2.0F, 2, Course.Semester.SPRING, true, null);
+    private final Course PHYS122 = new Course("PHYS122", "Physics II", 4.0F, 6, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course PHYS152 = new Course("PHYS152", "Physics Laboratory II", 1.0F, 1, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course HIS102 = new Course("HIS102", "Principles Of Atatürk And The History Of Turkish Revolution II", 2.0F, 2, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course TUR102 = new Course("TUR102", "Turkish II", 2.0F, 2, Course.Semester.SPRING, true, new ArrayList<>());
     //Semester three courses
-    private final Course CSE211 = new Course("CSE211", "Discrete Mathematics", 3.0F, 6, Course.Semester.FALL, true, null);
-    private final Course CSE231 = new Course("CSE231", "Circuits And Electronics", 4.0F, 8, Course.Semester.FALL, true, null);
-    private final Course CSE233 = new Course("CSE233", "Circuits And Electronics Laboratory", 1.0F, 2, Course.Semester.FALL, true, null);
+    private final Course CSE211 = new Course("CSE211", "Discrete Mathematics", 3.0F, 6, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course CSE231 = new Course("CSE231", "Circuits And Electronics", 4.0F, 8, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course CSE233 = new Course("CSE233", "Circuits And Electronics Laboratory", 1.0F, 2, Course.Semester.FALL, true, new ArrayList<>());
     private final Course CSE241 = new Course("CSE241", "Object Oriented Programming", 5.0F, 9, Course.Semester.BOTH, true, List.of("CSE102"));
-    private final Course ENGL111 = new Course("ENGL111", "Business English", 2.0F, 2, Course.Semester.FALL, true, null);
-    private final Course NonTElec3 = new Course("NonTElec3", "Nontechnical Elective I", 2.0F, 3, Course.Semester.FALL, false, null);
+    private final Course ENGL111 = new Course("ENGL111", "Business English", 2.0F, 2, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course NonTElec3 = new Course("NonTElec3", "Nontechnical Elective I", 2.0F, 3, Course.Semester.FALL, false, new ArrayList<>());
     //Semester four courses
     private final Course CSE222 = new Course("CSE222", "Data Structures and Algorithms", 5.0F, 9, Course.Semester.SPRING, true, List.of("CSE241"));
-    private final Course CSE232 = new Course("CSE232", "Logic Circuits And Design", 3.0F, 6, Course.Semester.SPRING, true, null);
-    private final Course CSE234 = new Course("CSE234", "Logic Circuits And Design Laboratory", 1.0F, 2, Course.Semester.SPRING, true, null);
-    private final Course MATH217 = new Course("MATH217", "Linear Algebra and Differantial Equations", 5.0F, 8, Course.Semester.SPRING, true, null);
-    private final Course ENGL112 = new Course("ENGL112", "Academic English", 2.0F, 2, Course.Semester.SPRING, true, null);
-    private final Course NonTElec4 = new Course("NonTElec4", "Nontechnical Elective II", 2.0F, 3, Course.Semester.SPRING, false, null);
+    private final Course CSE232 = new Course("CSE232", "Logic Circuits And Design", 3.0F, 6, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course CSE234 = new Course("CSE234", "Logic Circuits And Design Laboratory", 1.0F, 2, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course MATH217 = new Course("MATH217", "Linear Algebra and Differantial Equations", 5.0F, 8, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course ENGL112 = new Course("ENGL112", "Academic English", 2.0F, 2, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course NonTElec4 = new Course("NonTElec4", "Nontechnical Elective II", 2.0F, 3, Course.Semester.SPRING, false, new ArrayList<>());
     //Semester five courses
     private final Course CSE321 = new Course("CSE321", "Introduction to Algorithm Design", 3.0F, 6, Course.Semester.FALL, true, List.of("CSE222","CSE211"));
     private final Course CSE331 = new Course("CSE331", "Computer Organization", 4.0F, 7, Course.Semester.FALL, true, List.of("CSE232"));
     private final Course CSE341 = new Course("CSE341", "Programming Languages", 3.0F, 6, Course.Semester.FALL, true, List.of("CSE102"));
     private final Course CSE343 = new Course("CSE343", "Software Engineering", 4.0F, 8, Course.Semester.FALL, true, List.of("CSE241"));
-    private final Course ENG300 = new Course("ENG300", "Summer Practice I", 0.5F, 1, Course.Semester.FALL, true, null);
-    private final Course NonTElec5 = new Course("NonTElec5", "Nontechnical Elective III", 2.0F, 3, Course.Semester.FALL, false, null);
+    private final Course ENG300 = new Course("ENG300", "Summer Practice I", 0.5F, 1, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course NonTElec5 = new Course("NonTElec5", "Nontechnical Elective III", 2.0F, 3, Course.Semester.FALL, false, new ArrayList<>());
     //Semester six courses
     private final Course CSE312 = new Course("CSE312", "Operating Systems", 3.0F, 6, Course.Semester.SPRING, true, List.of("CSE102","CSE331"));
     private final Course CSE344 = new Course("CSE344", "Systems Programming", 2.0F, 3, Course.Semester.SPRING, true, List.of("CSE102"));
     private final Course CSE351 = new Course("CSE351", "Signals and Systems", 3.0F, 6, Course.Semester.SPRING, true, List.of("MATH217"));
     private final Course CSE396 = new Course("CSE396", "Computer Engineering Project", 2.0F, 5, Course.Semester.SPRING, true, List.of("CSE343"));
-    private final Course MATH118 = new Course("MATH118", "Probability and Statistics", 3.0F, 6, Course.Semester.SPRING, true, null);
-    private final Course NonTElec6 = new Course("NonTElec6", "Nontechnical Elective IV", 2.0F, 3, Course.Semester.SPRING, false, null);
-    private final Course FElec6 = new Course("FElec6", "Free Elective", 2.0F, 3, Course.Semester.SPRING, false, null);
+    private final Course MATH118 = new Course("MATH118", "Probability and Statistics", 3.0F, 6, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course NonTElec6 = new Course("NonTElec6", "Nontechnical Elective IV", 2.0F, 3, Course.Semester.SPRING, false, new ArrayList<>());
+    private final Course FElec6 = new Course("FElec6", "Free Elective", 2.0F, 3, Course.Semester.SPRING, false, new ArrayList<>());
     //Semester seven courses
-    private final Course CSE495 = new Course("CSE495", "Graduation Project I", 1.0F, 6, Course.Semester.FALL, true, null);
-    private final Course ENG400 = new Course("ENG400", "Summer Practice II", 0.5F, 1, Course.Semester.FALL, true, null);
-    private final Course ENG401 = new Course("ENG401", "Occupational Health and Safety I", 1.0F, 1, Course.Semester.FALL, true, null);
-    private final Course DElec7 = new Course("DElec7", "Departmental Elective I", 3.0F, 6, Course.Semester.FALL, false, null);
-    private final Course NonTElec7 = new Course("NonTElec7", "Nontechnical Elective V", 2.0F, 3, Course.Semester.FALL, false, null);
+    private final Course CSE495 = new Course("CSE495", "Graduation Project I", 1.0F, 6, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course ENG400 = new Course("ENG400", "Summer Practice II", 0.5F, 1, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course ENG401 = new Course("ENG401", "Occupational Health and Safety I", 1.0F, 1, Course.Semester.FALL, true, new ArrayList<>());
+    private final Course DElec7 = new Course("DElec7", "Departmental Elective I", 3.0F, 6, Course.Semester.FALL, false, new ArrayList<>());
+    private final Course NonTElec7 = new Course("NonTElec7", "Nontechnical Elective V", 2.0F, 3, Course.Semester.FALL, false, new ArrayList<>());
     //Semester eight courses
-    private final Course CSE496 = new Course("CSE496", "Graduation Project II", 1.0F, 6, Course.Semester.SPRING, true, null);
-    private final Course ENG402 = new Course("ENG402", "Occupational Health and Safety II", 1.0F, 1, Course.Semester.SPRING, true, null);
-    private final Course DElec8 = new Course("DElec8", "Departmental Elective II", 3.0F, 6, Course.Semester.SPRING, false, null);
-    private final Course NonTElec8 = new Course("NonTElec8", "Nontechnical Elective", 2.0F, 3, Course.Semester.SPRING, false, null);
+    private final Course CSE496 = new Course("CSE496", "Graduation Project II", 1.0F, 6, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course ENG402 = new Course("ENG402", "Occupational Health and Safety II", 1.0F, 1, Course.Semester.SPRING, true, new ArrayList<>());
+    private final Course DElec8 = new Course("DElec8", "Departmental Elective II", 3.0F, 6, Course.Semester.SPRING, false, new ArrayList<>());
+    private final Course NonTElec8 = new Course("NonTElec8", "Nontechnical Elective", 2.0F, 3, Course.Semester.SPRING, false, new ArrayList<>());
 
 
     public CourseManager() {
